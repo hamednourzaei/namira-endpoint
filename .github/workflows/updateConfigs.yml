@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.HAMEDMKM }} # استفاده از توکن برای دسترسی به مخزن
+          token: ${{ secrets.NAMIRA }} # استفاده از توکن برای دسترسی به مخزن
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -32,4 +32,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add .
           git commit -m "Update configs automatically"
-          git push https://${{ secrets.HAMEDMKM }}@github.com/hamednourzaei/namira-endpoint.git main
+          git push https://${{ secrets.NAMIRA }}@github.com/hamednourzaei/namira-endpoint.git main
