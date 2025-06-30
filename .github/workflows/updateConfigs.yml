@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.NAMIRA }} # استفاده از توکن برای دسترسی به مخزن
+          token: ${{ secrets.HAMEDMKM }} # استفاده از توکن برای دسترسی به مخزن
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,21 +26,10 @@ jobs:
       - name: Run update script
         run: node index.js
 
-      - name: Commit & Push changes
+      - name: Commit & Push changes to main
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add .
-          git commit -m "Update configs"
-          git push https://${{ secrets.NAMIRA }}@github.com/hamednourzaei/namira-endpoint.git
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.NAMIRA }}
-          commit-message: "🔁 Update configs automatically"
-          title: "Auto-update configs"
-          body: "Automatic update by GitHub Actions"
-          branch: auto-update-configs
-          base: main
-          auto-merge: true
+          git commit -m "Update configs automatically"
+          git push https://${{ secrets.HAMEDMKM }}@github.com/hamednourzaei/namira-endpoint.git main
