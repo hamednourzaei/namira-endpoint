@@ -1,6 +1,146 @@
 [
   {
+<<<<<<< HEAD
     "id": "1cc5b41e-a06f-436b-b156-8a5f436dbd88",
+=======
+    "id": "97973432-0c67-408e-9393-e9b2d61170d2",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.204.237 | DE",
+    "server": "91.99.204.237",
+    "port": 443,
+    "raw": "vless://7a66b8ef-9713-4b69-b839-6bb45070af35@91.99.204.237:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.204.237%20%7C%20DE"
+  },
+  {
+    "id": "cf6a6543-7be5-4721-a2f4-103a7c29de1a",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 UTC.hamrahconf.ir | DE",
+    "server": "UTC.hamrahconf.ir",
+    "port": 2479,
+    "raw": "vless://fb47cf9d-6866-4a41-9ac9-13a8dd7dafaf@UTC.hamrahconf.ir:2479?path=%2Fpath&security=none&encryption=none&host=speedtest.net&type=ws#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20UTC.hamrahconf.ir%20%7C%20DE"
+  },
+  {
+    "id": "723c16a5-a017-4e84-ab6e-37401c00de63",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.182.117 | DE",
+    "server": "91.99.182.117",
+    "port": 443,
+    "raw": "vless://36ee3f5a-3816-4c03-a324-47531167e53b@91.99.182.117:443/?encryption=none&host=zula.ir&type=tcp&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.182.117%20%7C%20DE"
+  },
+  {
+    "id": "db3888f6-ac40-4688-9b33-54d3b7f13d52",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.207.47 | DE",
+    "server": "91.99.207.47",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.207.47:443/?encryption=none&flow=&host=zula.ir&type=tcp&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.207.47%20%7C%20DE"
+  },
+  {
+    "id": "8ccc88dc-9d9f-4d28-8194-345a7408f9eb",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.231.218 | DE",
+    "server": "91.99.231.218",
+    "port": 443,
+    "raw": "vless://7b6eca4c-44ae-40c6-973a-4e3b29d30803@91.99.231.218:443?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.231.218%20%7C%20DE"
+  },
+  {
+    "id": "c2b588ab-e48c-4259-87df-4aa7bb3dd17d",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.207.135 | DE",
+    "server": "91.99.207.135",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.207.135:51615?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.207.135%20%7C%20DE"
+  },
+  {
+    "id": "96879fc5-f4e3-4644-ae02-0f3515dc4ee7",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.198.191 | DE",
+    "server": "91.99.198.191",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.198.191:443?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.198.191%20%7C%20DE"
+  },
+  {
+    "id": "6271a0d7-d1dc-4b06-9adb-5e455ab14b74",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.122.47 | DE",
+    "server": "91.99.122.47",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.122.47:443?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.122.47%20%7C%20DE"
+  },
+  {
+    "id": "1ae1c8f2-8149-49d4-b99f-9af422d82a6f",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.171.12 | DE",
+    "server": "91.99.171.12",
+    "port": 443,
+    "raw": "vless://36ee3f5a-3816-4c03-a324-47531167e53b@91.99.171.12:443?security=none&encryption=none&host=zula.ir%2F%3F&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.171.12%20%7C%20DE"
+  },
+  {
+    "id": "326235b3-074a-4de8-a739-856d9ec40137",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.207.230 | DE",
+    "server": "91.99.207.230",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.207.230:51615?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.207.230%20%7C%20DE"
+  },
+  {
+    "id": "988d3637-55b1-4a39-8559-e4d50aac1e4e",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.92.95 | DE",
+    "server": "91.99.92.95",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.92.95:51615/?encryption=none&flow=&host=zula.ir&type=tcp&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.92.95%20%7C%20DE"
+  },
+  {
+    "id": "b96f7284-bf1d-4fd6-97e3-662d90b77f72",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.206.230 | DE",
+    "server": "91.99.206.230",
+    "port": 443,
+    "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.206.230:443?type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.206.230%20%7C%20DE"
+  },
+  {
+    "id": "2b8230fd-ac63-4d18-9962-254fc95459f1",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.139.18 | DE",
+    "server": "91.99.139.18",
+    "port": 443,
+    "raw": "vless://36ee3f5a-3816-4c03-a324-47531167e53b@91.99.139.18:443/?encryption=none&flow=&host=zula.ir&type=tcp&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.139.18%20%7C%20DE"
+  },
+  {
+    "id": "e066fbac-d5d8-4da0-b3dd-3bc6c7e3e932",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.159.125 | DE",
+    "server": "91.99.159.125",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.159.125:443?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.159.125%20%7C%20DE"
+  },
+  {
+    "id": "fee7b120-4acc-43f9-b2d7-e94175ae6cd0",
+    "type": "trojan",
+    "tag": "✨ @NamiraNet | 🛡️ | 🌐 spkr.1234567890spcloud.com | DE",
+    "server": "spkr.1234567890spcloud.com",
+    "port": 443,
+    "raw": "trojan://254aa898-bc2a-4ec8-87d1-9f5d37658f6c@spkr.1234567890spcloud.com:443?security=tls#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9B%A1%EF%B8%8F%20%7C%20%F0%9F%8C%90%20spkr.1234567890spcloud.com%20%7C%20DE"
+  },
+  {
+    "id": "20fcbf1c-3b49-4cba-9dab-73b3c04c11f3",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.195.73 | DE",
+    "server": "91.99.195.73",
+    "port": 443,
+    "raw": "vless://36ee3f5a-3816-4c03-a324-47531167e53b@91.99.195.73:443?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.195.73%20%7C%20DE"
+  },
+  {
+    "id": "7e9fee62-1983-47e0-801b-29f5cfb45103",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.65 | DE",
+    "server": "91.99.203.65",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.203.65:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.203.65%20%7C%20DE"
+  },
+  {
+    "id": "2a5c4f51-f005-4816-b871-1678453ce367",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.193.96 | DE",
     "server": "91.99.193.96",
@@ -8,7 +148,11 @@
     "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.193.96:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.193.96%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "e9599196-e4da-49f4-b9f2-1590a66460ab",
+=======
+    "id": "0d48a7af-25cf-451a-abfc-638f558ff6e2",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.193 | DE",
     "server": "91.99.203.193",
@@ -16,7 +160,11 @@
     "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.203.193:443?security=none&encryption=none&host=zula.ir%2F%3FBya_telegram_%40JOKERRVPN&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.203.193%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "b12d6586-3fef-41b2-a2d4-5ca4185dcce5",
+=======
+    "id": "694bfaf8-a379-40d3-8940-ced430a42824",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.231.218 | DE",
     "server": "91.99.231.218",
@@ -24,6 +172,7 @@
     "raw": "vless://7b6eca4c-44ae-40c6-973a-4e3b29d30803@91.99.231.218:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.231.218%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "dbd7cf27-f86f-4c10-adef-666322757e59",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.65 | DE",
@@ -89,6 +238,9 @@
   },
   {
     "id": "c14d664a-c4da-4a8f-830b-1617c5845c51",
+=======
+    "id": "795b8ae4-f05f-4df7-bda7-cb6a7cb6369a",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.145.219 | DE",
     "server": "91.99.145.219",
@@ -96,7 +248,11 @@
     "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.145.219:443?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.145.219%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "fae7883c-5f2b-4504-96bf-dcf585bce4e3",
+=======
+    "id": "b11c0965-6700-46ae-a421-c3571f7a93fe",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.202.155 | DE",
     "server": "91.99.202.155",
@@ -104,7 +260,11 @@
     "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.202.155:443?security=none&type=tcp&host=zula.ir/?/BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.202.155%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "be33964c-b581-4f7b-84d0-7ba4b28d10ce",
+=======
+    "id": "1cbab40c-1a52-43e9-b593-58af0a1b2354",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.194.54 | DE",
     "server": "91.99.194.54",
@@ -112,7 +272,235 @@
     "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.194.54:443?security=none&type=tcp&host=zula.ir%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.194.54%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "9177da29-a39a-4f3d-9441-a0b529a458f4",
+=======
+    "id": "5e11c85a-4bd6-4bc0-8696-b8ced6e44055",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.160.13 | DE",
+    "server": "91.99.160.13",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.160.13:443?security=&encryption=none&host=zula.ir%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.160.13%20%7C%20DE"
+  },
+  {
+    "id": "5a1bb651-58a4-4a8e-930f-92c8c3608c61",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.107.157.118 | DE",
+    "server": "91.107.157.118",
+    "port": 8443,
+    "raw": "vless://5bebcdd6-90a2-4bc8-b919-f78b4558d5b4@91.107.157.118:8443?security=none&encryption=none&headerType=none&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.107.157.118%20%7C%20DE"
+  },
+  {
+    "id": "d2e4b087-1be5-4fe9-9a8c-c8c456a8a36c",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 5.75.200.239 | DE",
+    "server": "5.75.200.239",
+    "port": 8443,
+    "raw": "vless://32cc2200-ee0f-4654-a470-7acef06d49e6@5.75.200.239:8443?security=none&encryption=none&headerType=none&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.75.200.239%20%7C%20DE"
+  },
+  {
+    "id": "cdd68a38-1253-47eb-b315-f5d088c15efd",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.74 | DE",
+    "server": "91.99.150.74",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.150.74:51615?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.150.74%20%7C%20DE"
+  },
+  {
+    "id": "b8939a0c-3aa2-4323-affd-f1db448f0dc0",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.181.193 | DE",
+    "server": "91.99.181.193",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.181.193:51615?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.181.193%20%7C%20DE"
+  },
+  {
+    "id": "d56be8a8-f2c1-48e8-95bf-3cb71da13675",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.207.14 | DE",
+    "server": "91.99.207.14",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.207.14:51615?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.207.14%20%7C%20DE"
+  },
+  {
+    "id": "45cdf083-2477-4058-87ed-1ffed82504e5",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.192.155 | DE",
+    "server": "91.99.192.155",
+    "port": 443,
+    "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.192.155:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.192.155%20%7C%20DE"
+  },
+  {
+    "id": "0eb31ca9-a3b5-4ed9-8226-7065d8067bf9",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.206.91 | DE",
+    "server": "91.99.206.91",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.206.91:51615?security=&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.206.91%20%7C%20DE"
+  },
+  {
+    "id": "2bc741f7-2340-4630-8477-b04e45acd30b",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.160.210 | DE",
+    "server": "91.99.160.210",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.160.210:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.160.210%20%7C%20DE"
+  },
+  {
+    "id": "277f39a7-d47a-448d-8eff-7f6b84e37741",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.205.56 | DE",
+    "server": "91.99.205.56",
+    "port": 443,
+    "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.205.56:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.205.56%20%7C%20DE"
+  },
+  {
+    "id": "98ac4a38-28fe-42fb-94b8-01e74f067b75",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.69 | DE",
+    "server": "91.99.203.69",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.203.69:51615?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.203.69%20%7C%20DE"
+  },
+  {
+    "id": "ae925cf1-3858-47c4-be61-59e8f8901ad4",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 meli1.dashvili.ir | DE",
+    "server": "meli1.dashvili.ir",
+    "port": 80,
+    "raw": "vless://f5f2458c-5fcb-4820-82c2-2997492c54d5@meli1.dashvili.ir:80?path=%2F&security=&encryption=none&type=ws#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20meli1.dashvili.ir%20%7C%20DE"
+  },
+  {
+    "id": "690c8e62-5ea9-4447-927e-ae166edbb7c1",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.205.121 | DE",
+    "server": "91.99.205.121",
+    "port": 443,
+    "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.205.121:443?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.205.121%20%7C%20DE"
+  },
+  {
+    "id": "3b526df5-b0b7-4177-bea5-78d59c129d46",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.170.191 | DE",
+    "server": "91.99.170.191",
+    "port": 443,
+    "raw": "vless://36ee3f5a-3816-4c03-a324-47531167e53b@91.99.170.191:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.170.191%20%7C%20DE"
+  },
+  {
+    "id": "6a4c1101-a7f6-4b4b-9164-9a03725864f7",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.162.239 | DE",
+    "server": "91.99.162.239",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.162.239:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.162.239%20%7C%20DE"
+  },
+  {
+    "id": "1b83cff5-da73-4705-bf43-8e31e23af22f",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.195.240 | DE",
+    "server": "91.99.195.240",
+    "port": 443,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.195.240:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.195.240%20%7C%20DE"
+  },
+  {
+    "id": "c9424f40-a206-4505-8a12-516be2cdc3f9",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.214.13 | DE",
+    "server": "5.10.214.13",
+    "port": 8880,
+    "raw": "vless://9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0@5.10.214.13:8880?sni=Telegram-channel-WangCai2&type=ws&host=c.82313369.xyz&path=/Telegram🇨🇳&allowInsecure=0#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.214.13%20%7C%20DE"
+  },
+  {
+    "id": "f2e80792-12db-4b4b-b393-8798d7cfd138",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 46.101.199.91 | DE",
+    "server": "46.101.199.91",
+    "port": 8080,
+    "raw": "vless://65951889-54af-453f-a7a1-55b91e5a5ad5@46.101.199.91:8080?security=none&type=tcp&host=zula.ir&path=%2F&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2046.101.199.91%20%7C%20DE"
+  },
+  {
+    "id": "dbf7ac5d-f083-4a52-8292-934ca10c4b22",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.215.3 | DE",
+    "server": "5.10.215.3",
+    "port": 8880,
+    "raw": "vless://b5441b0d-2147-4898-8a6a-9b2c87f58382@5.10.215.3:8880?sni=Telegram-channel-WangCai2&type=ws&host=bitget1.asdasd.click&path=/Telegram🇨🇳&allowInsecure=0#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.215.3%20%7C%20DE"
+  },
+  {
+    "id": "ab0fe7dc-8aba-4195-9fbd-08a2fe230240",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.205.175 | DE",
+    "server": "91.99.205.175",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.205.175:51615?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.205.175%20%7C%20DE"
+  },
+  {
+    "id": "8b76fa61-fd0d-4643-af9c-5170198e9e56",
+    "type": "trojan",
+    "tag": "✨ @NamiraNet | 🛡️ | 🌐 91.195.240.12 | DE",
+    "server": "91.195.240.12",
+    "port": 443,
+    "raw": "trojan://254aa898-bc2a-4ec8-87d1-9f5d37658f6c@91.195.240.12:443?security=tls&sni=spkr.1234567890spcloud.com&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9B%A1%EF%B8%8F%20%7C%20%F0%9F%8C%90%2091.195.240.12%20%7C%20DE"
+  },
+  {
+    "id": "34efb512-6c06-458e-ae00-a8d0d92ad87c",
+    "type": "trojan",
+    "tag": "✨ @NamiraNet | 🛡️ | 🌐 37.114.62.218 | DE",
+    "server": "37.114.62.218",
+    "port": 443,
+    "raw": "trojan://6e1b9a65-884f-3aa9-9469-bf6ec0f08610@37.114.62.218:443?security=tls&sni=45.32.28.232&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9B%A1%EF%B8%8F%20%7C%20%F0%9F%8C%90%2037.114.62.218%20%7C%20DE"
+  },
+  {
+    "id": "778030d5-eea8-4031-a45c-bd48ef216c3f",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.122.102 | DE",
+    "server": "91.99.122.102",
+    "port": 443,
+    "raw": "vless://7b6eca4c-44ae-40c6-973a-4e3b29d30803@91.99.122.102:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.122.102%20%7C%20DE"
+  },
+  {
+    "id": "c4dea4b3-5488-4285-8e8a-63e4e6141cf8",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.80.183 | DE",
+    "server": "91.99.80.183",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.80.183:51615?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.80.183%20%7C%20DE"
+  },
+  {
+    "id": "553494b5-b9c6-4441-aa10-f0ed3a30175d",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.214.251 | DE",
+    "server": "5.10.214.251",
+    "port": 8880,
+    "raw": "vless://0132166f-e702-48ed-a9e7-b07af768faf8@5.10.214.251:8880?type=ws&host=cf.d3z.net&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.214.251%20%7C%20DE"
+  },
+  {
+    "id": "9064ea91-cd4a-4b8d-a286-eda15f84ba45",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.214.29 | DE",
+    "server": "5.10.214.29",
+    "port": 8880,
+    "raw": "vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@5.10.214.29:8880?security=none&sni=hk.laoyoutiao.link&type=ws&host=hk.laoyoutiao.link&path=%2F---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net%2F#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.214.29%20%7C%20DE"
+  },
+  {
+    "id": "17fef22b-c2ab-4546-b5ef-0926a82158d4",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.193 | DE",
+    "server": "91.99.203.193",
+    "port": 443,
+    "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.203.193:443?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.203.193%20%7C%20DE"
+  },
+  {
+    "id": "3fabbd1b-2663-4782-8f7e-a4f5a6765bf4",
+    "type": "vless",
+    "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.190.38 | DE",
+    "server": "91.99.190.38",
+    "port": 51615,
+    "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.190.38:51615?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.190.38%20%7C%20DE"
+  },
+  {
+    "id": "2de10c63-8f42-485a-ba86-2f6266c76c46",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.192.185 | DE",
     "server": "91.99.192.185",
@@ -120,6 +508,7 @@
     "raw": "vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.192.185:443?security=none&type=tcp&host=zula.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.192.185%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "842c2936-9d30-450d-82fc-bc7ab23d5706",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.204.237 | DE",
@@ -817,6 +1206,9 @@
   },
   {
     "id": "4f618746-613a-4657-bfcf-75ec90cb76e9",
+=======
+    "id": "759e4203-fc2a-440f-a5c5-b3628d2eb225",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.107.157.118 | DE",
     "server": "91.107.157.118",
@@ -824,6 +1216,7 @@
     "raw": "vless://7a4c8b45-e520-4689-b82b-6884894160b5@91.107.157.118:8080?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.107.157.118%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "69508263-c280-4bbf-84e6-45a47613625b",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.198.191 | DE",
@@ -857,6 +1250,9 @@
   },
   {
     "id": "f4e08593-316b-4d9a-94f1-bc65f3865ec1",
+=======
+    "id": "476f3be4-3170-42b9-83b5-09b3b2d8a58c",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.214.254 | DE",
     "server": "5.10.214.254",
@@ -864,7 +1260,11 @@
     "raw": "vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@5.10.214.254:8880?type=ws&host=yg.bantony199.top&path=%2F#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.214.254%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "a707074e-99bc-4557-bebc-69ecf445ec16",
+=======
+    "id": "9dc5e1fe-e589-41e1-bf99-38545ca5addc",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.215.251 | DE",
     "server": "5.10.215.251",
@@ -872,6 +1272,7 @@
     "raw": "vless://0132166f-e702-48ed-a9e7-b07af768faf8@5.10.215.251:8880?security=none&sni=Telegram-channel-WangCai2&type=ws&host=cf.d3z.net&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.215.251%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "a2e4085f-9d24-4d73-b6a0-13ae5e788d1c",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.207.135 | DE",
@@ -953,6 +1354,9 @@
   },
   {
     "id": "0a8e69ca-1b41-4719-959b-be33a5d91242",
+=======
+    "id": "93f71417-b679-4bcb-964f-48c194f9cc42",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.214.3 | DE",
     "server": "5.10.214.3",
@@ -960,6 +1364,7 @@
     "raw": "vless://b5441b0d-2147-4898-8a6a-9b2c87f58382@5.10.214.3:8880?sni=Telegram-channel-WangCai2&type=ws&host=bitget1.asdasd.click&path=/Telegram🇨🇳&allowInsecure=0#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.214.3%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "50f091d7-fcef-4e63-843d-1c6dd81ac24d",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.74 | DE",
@@ -1033,6 +1438,9 @@
   },
   {
     "id": "28747869-064c-440f-b3b1-3d6c12346ca8",
+=======
+    "id": "44ba8363-c4b3-4398-a065-6e0372d8681d",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 s3.france-learns.ir | DE",
     "server": "s3.france-learns.ir",
@@ -1040,7 +1448,11 @@
     "raw": "vless://fdba320d-23a9-4e05-9604-3c1ca88f49b7@s3.france-learns.ir:42542?security=none&type=tcp&headerType=http&path=%2F&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20s3.france-learns.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "a7945938-7b52-49af-9b95-8551fa66e2b7",
+=======
+    "id": "bd054f02-9a02-4fa9-ab9e-cbdf807740ea",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 s2.france-learns.ir | DE",
     "server": "s2.france-learns.ir",
@@ -1048,6 +1460,7 @@
     "raw": "vless://fdba320d-23a9-4e05-9604-3c1ca88f49b7@s2.france-learns.ir:42542?security=none&type=tcp&headerType=http&path=%2F&host=tgju.org#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20s2.france-learns.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "dbb8b33e-24f3-4282-8a45-a97ff4ec3398",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.65 | DE",
@@ -1089,6 +1502,9 @@
   },
   {
     "id": "9a81ab7a-1931-4d13-a136-2f50f4fc9970",
+=======
+    "id": "1c6e9816-14fb-4956-85cd-86fdd291d8ba",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 104.248.129.132 | DE",
     "server": "104.248.129.132",
@@ -1096,6 +1512,7 @@
     "raw": "vless://d9a7e232-611c-498b-a5bb-7d91778d2592@104.248.129.132:45557?type=tcp&path=%2F&host=zula.ir&headerType=http&security=none#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20104.248.129.132%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "096af3da-9f7b-44d9-b4bc-123aa8d165ba",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.69 | DE",
@@ -1169,6 +1586,9 @@
   },
   {
     "id": "834d6ee9-3e60-4f37-9786-d985622acdda",
+=======
+    "id": "6f0f227b-3c55-4f87-824d-392f0db60bcb",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.170.56 | DE",
     "server": "91.99.170.56",
@@ -1176,6 +1596,7 @@
     "raw": "vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.170.56:51615?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.170.56%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "de7656c9-5d4d-4fb9-ae0a-1f56f3e76529",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.194.54 | DE",
@@ -1273,6 +1694,9 @@
   },
   {
     "id": "222f1631-1e37-447a-b482-314282c05312",
+=======
+    "id": "d7b94b74-5859-49f9-8fea-3918dd6288fd",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.157 | DE",
     "server": "91.99.150.157",
@@ -1280,7 +1704,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.150.157:3799?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.150.157%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "93ed79d4-411e-4c69-a029-5da9ca60ef9e",
+=======
+    "id": "b0b8dbec-580a-4077-9e79-239388fa9e29",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 230920393.f-sub.com | DE",
     "server": "230920393.f-sub.com",
@@ -1288,7 +1716,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@230920393.f-sub.com:3799?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20230920393.f-sub.com%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "e1d21b51-0aed-43e5-937e-83f363f9e4ac",
+=======
+    "id": "62d32201-3a53-45ef-b176-410a8f0318d8",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 99823232.webnama.com.tr | DE",
     "server": "99823232.webnama.com.tr",
@@ -1296,6 +1728,7 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@99823232.webnama.com.tr:1517?security=none&encryption=none&host=testspeed-foreign.tci.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2099823232.webnama.com.tr%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "7e3b4ec8-020b-4255-bf0c-905e2ce3925a",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.170.56 | DE",
@@ -1305,6 +1738,9 @@
   },
   {
     "id": "64bf5671-e495-4778-b0b4-22543f18bed6",
+=======
+    "id": "25449cf2-663b-4244-80e1-ee50f24ae391",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.156 | DE",
     "server": "91.99.150.156",
@@ -1312,7 +1748,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.150.156:3799?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.150.156%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "b5629548-b17b-4d0f-acbf-f3da17df905c",
+=======
+    "id": "9d8ee23e-b077-452b-a9ef-21de1971e5c5",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.125.246 | DE",
     "server": "91.99.125.246",
@@ -1320,7 +1760,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.125.246:1517?security=none&type=tcp&host=testspeed-foreign.tci.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.125.246%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "1887eee6-c3f3-4d50-a987-de783c314761",
+=======
+    "id": "7931522b-3418-4109-92e7-376f8e30c2a1",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.148.251 | DE",
     "server": "91.99.148.251",
@@ -1328,7 +1772,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.148.251:1517?security=none&type=tcp&host=testspeed-foreign.tci.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.148.251%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "c740bc81-77c1-4983-9e6e-9273a37472b9",
+=======
+    "id": "56eadec6-c772-4ce8-b90c-711db1d2aacb",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "trojan",
     "tag": "✨ @NamiraNet | 🛡️ | 🌐 de01a.kbservice.club | DE",
     "server": "de01a.kbservice.club",
@@ -1336,6 +1784,7 @@
     "raw": "trojan://6e1b9a65-884f-3aa9-9469-bf6ec0f08610@de01a.kbservice.club:443/?type=tcp&security=tls&sni=45.32.28.232#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9B%A1%EF%B8%8F%20%7C%20%F0%9F%8C%90%20de01a.kbservice.club%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "ea622abf-bd0e-4ee9-a4ff-355aa6e8d2c6",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.231.218 | DE",
@@ -1409,6 +1858,9 @@
   },
   {
     "id": "d3b82c42-2d67-4971-a5da-ee9402468b1b",
+=======
+    "id": "812924ff-018f-4ec4-95f5-6605b915eb68",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.177.50 | DE",
     "server": "91.99.177.50",
@@ -1416,7 +1868,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.177.50:1517?security=none&type=tcp&host=testspeed-foreign.tci.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.177.50%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "a30b2d21-3c74-44d9-b4ec-252c877aafb1",
+=======
+    "id": "bf60b44d-31bb-41e4-bb91-937c4c886b71",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.177.225 | DE",
     "server": "91.99.177.225",
@@ -1424,6 +1880,7 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.177.225:1517?security=none&type=tcp&host=testspeed-foreign.tci.ir&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.177.225%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "b44a089e-be53-4566-ab26-ba7046ed86fa",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.80.183 | DE",
@@ -1457,6 +1914,9 @@
   },
   {
     "id": "014285dc-a80e-4986-8c61-0baaf5d2bae3",
+=======
+    "id": "8d17275e-d373-49de-b5bb-a623cbd89562",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.205.88 | DE",
     "server": "91.99.205.88",
@@ -1464,7 +1924,11 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.205.88:3799?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.205.88%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "95810c6a-0c43-4f33-b04e-31e58df39439",
+=======
+    "id": "ea74dafb-aecd-480b-87ce-f007728138aa",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.125.246 | DE",
     "server": "91.99.125.246",
@@ -1472,6 +1936,7 @@
     "raw": "vless://568dbffe-95a6-459c-84cd-a49b0cd2a5a3@91.99.125.246:3799?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.125.246%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "0f2b85c9-8296-4c15-a250-ea3ab3cf910e",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.207.21 | DE",
@@ -1681,6 +2146,9 @@
   },
   {
     "id": "fffc5413-350d-44e6-b06c-520b8ad883e2",
+=======
+    "id": "145d1ac4-9ee2-4165-99d8-112ade39f63e",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 46.101.199.91 | DE",
     "server": "46.101.199.91",
@@ -1688,6 +2156,7 @@
     "raw": "vless://65951889-54af-453f-a7a1-55b91e5a5ad5@46.101.199.91:80?security=none&type=tcp&host=speedtest.net&path=%2F&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2046.101.199.91%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "7ad0d7d2-4cd8-480b-b2d1-38940c023c9e",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.145.219 | DE",
@@ -1769,6 +2238,9 @@
   },
   {
     "id": "994d9ec7-f694-403e-9914-0c85a159e458",
+=======
+    "id": "d4b23cce-afcb-4b60-8f4d-7f5cc9bb962d",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 tastpokk.filimooo.site | DE",
     "server": "tastpokk.filimooo.site",
@@ -1776,6 +2248,7 @@
     "raw": "vless://7a4c8b45-e520-4689-b82b-6884894160b5@tastpokk.filimooo.site:8080?security=&encryption=none&host=speedtest.net&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20tastpokk.filimooo.site%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "5e0c1596-fa31-4d50-9cdd-25b9e3f3dc73",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.122.47 | DE",
@@ -1937,6 +2410,9 @@
   },
   {
     "id": "e16043d6-9b35-4056-824a-4e464f8aa891",
+=======
+    "id": "d5b19d4b-cefe-4b0d-a274-5ef43fcb0aaa",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 apx.set7.site | DE",
     "server": "apx.set7.site",
@@ -1944,6 +2420,7 @@
     "raw": "vless://aca63d8b-c3c7-4db1-b121-d335719a820b@apx.set7.site:18960/?type=tcp&security=none#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20apx.set7.site%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "aade15de-9b40-4012-83ed-ad5a9262ae2a",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 104.248.129.132 | DE",
@@ -1961,6 +2438,9 @@
   },
   {
     "id": "1841ccbf-33b5-4e2b-aa2f-881e041ce634",
+=======
+    "id": "19f14c8e-8fa9-4a89-8024-56cc214d9eac",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 dekoo.3dlkimi.ir | DE",
     "server": "dekoo.3dlkimi.ir",
@@ -1968,6 +2448,7 @@
     "raw": "vless://65951889-54af-453f-a7a1-55b91e5a5ad5@dekoo.3dlkimi.ir:8080?security=none&type=tcp&headerType=http&path=%2F&host=speedtest.net#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20dekoo.3dlkimi.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "f4abb838-8eea-4f90-a74d-8dc144993eee",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.170.191 | DE",
@@ -1985,6 +2466,9 @@
   },
   {
     "id": "72067e99-4f43-42c7-b580-1e71bf0464cc",
+=======
+    "id": "022fcd55-9cc5-45f4-889d-de37ad16c186",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.215.13 | DE",
     "server": "5.10.215.13",
@@ -1992,6 +2476,7 @@
     "raw": "vless://9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0@5.10.215.13:8880?sni=Telegram-channel-WangCai2&type=ws&host=c.82313369.xyz&path=/Telegram🇨🇳&allowInsecure=0#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.10.215.13%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "e0061c3b-cb2b-4966-b3c8-569c64584b6e",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.170.191 | DE",
@@ -2017,6 +2502,9 @@
   },
   {
     "id": "568981bb-ac50-4e8c-9c30-df140970b847",
+=======
+    "id": "9e6ad42a-44da-4464-8509-f8e360a67118",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 s85cndx2225.mmadvip8563.ir | DE",
     "server": "s85cndx2225.mmadvip8563.ir",
@@ -2024,6 +2512,7 @@
     "raw": "vless://a8e41efd-0fb8-459a-9fab-95e038a003f4@s85cndx2225.mmadvip8563.ir:3799?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20s85cndx2225.mmadvip8563.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "256fbbd8-e7e8-4bc7-b001-cdd024e2eebd",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.231.218 | DE",
@@ -2041,6 +2530,9 @@
   },
   {
     "id": "dd371546-d545-4d21-92c4-6525a2f85e54",
+=======
+    "id": "d69022d8-dd6c-45fe-a88f-e40372fc4f5c",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 s1.france-learns.ir | DE",
     "server": "s1.france-learns.ir",
@@ -2048,6 +2540,7 @@
     "raw": "vless://8bb6a53c-6ab2-48a7-b74d-588a1a5a3c54@s1.france-learns.ir:42542?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20s1.france-learns.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "50f0254a-093a-4f92-9db7-805dbcfb4c90",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.203.65 | DE",
@@ -2089,6 +2582,9 @@
   },
   {
     "id": "0a3dc9f7-a9a7-4419-87fd-ea4fd1226144",
+=======
+    "id": "42abf1a5-bac4-482c-bb56-61740c7798a0",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.107.157.118 | DE",
     "server": "91.107.157.118",
@@ -2096,6 +2592,7 @@
     "raw": "vless://28b97b15-ccd8-40f9-a02a-d0ecd44ac556@91.107.157.118:8880?security=none&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.107.157.118%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "1097a90c-887d-4da0-a785-89c872d0095a",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.202.155 | DE",
@@ -2129,6 +2626,9 @@
   },
   {
     "id": "7fc21a68-533c-4a6e-ba7b-291ede29aa7f",
+=======
+    "id": "6b8fdb54-a0c5-45e5-8c45-549e17ca5d52",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.107.152.246 | DE",
     "server": "91.107.152.246",
@@ -2136,6 +2636,7 @@
     "raw": "vless://42389e23-5f27-49cb-b0c9-eb336e7b129c@91.107.152.246:8443?security=none&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.107.152.246%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "348c229c-ce0c-47c3-a605-8fb6d55f9026",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.159.125 | DE",
@@ -2169,6 +2670,9 @@
   },
   {
     "id": "5fdc7412-be3c-4ea2-9121-a9e95eae9db8",
+=======
+    "id": "f394f369-4c4d-4e86-9277-ccf360c9b3db",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.188.10 | DE",
     "server": "91.99.188.10",
@@ -2176,6 +2680,7 @@
     "raw": "vless://aa188240-cf10-4df6-9543-5223800891be@91.99.188.10:8880?security=none&type=tcp&host=eN.TwiTtER.cOM.%3A8880&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.188.10%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "50f0e105-2462-4b5d-9385-8d5045603268",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.74 | DE",
@@ -2193,6 +2698,9 @@
   },
   {
     "id": "74cfd8fe-fc65-434f-9eee-15d49216b966",
+=======
+    "id": "51b4088c-7eae-4c58-bf3a-e7040e47799b",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.177.50 | DE",
     "server": "91.99.177.50",
@@ -2200,7 +2708,11 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@91.99.177.50:3799?security=none&type=tcp&host=speedtest.net&path=%2F&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.177.50%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "44ddda29-5531-475a-8275-d99b643e2069",
+=======
+    "id": "7111a9f4-815e-4885-aa67-fc0bb646a27d",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.177.225 | DE",
     "server": "91.99.177.225",
@@ -2208,7 +2720,11 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@91.99.177.225:3799?security=none&type=tcp&host=speedtest.net&path=%2F&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.177.225%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "2bfa08d2-71f5-4a6a-8363-99582f67f735",
+=======
+    "id": "66934d51-2478-4112-aa3a-e03c3e44aff9",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.148.251 | DE",
     "server": "91.99.148.251",
@@ -2216,6 +2732,7 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@91.99.148.251:3799?security=none&type=tcp&host=speedtest.net&path=%2F&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.148.251%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "4723d2b9-4445-4379-b630-814648bcd9b6",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.157 | DE",
@@ -2257,6 +2774,9 @@
   },
   {
     "id": "c872af65-10db-4dfa-8305-b4992819f15f",
+=======
+    "id": "4d4f074f-5058-4c15-b840-ed127c9aee56",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.156 | DE",
     "server": "91.99.150.156",
@@ -2264,6 +2784,7 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@91.99.150.156:1429?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.150.156%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "b92b3092-96ed-4f7d-a14e-a58c1f0dec3b",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.74 | DE",
@@ -2273,6 +2794,9 @@
   },
   {
     "id": "05dda7db-5777-485f-8b46-5c905096f9c2",
+=======
+    "id": "f2036b3b-d5e5-4756-bad6-75683552f46d",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 78234873823.webnama.com.tr | DE",
     "server": "78234873823.webnama.com.tr",
@@ -2280,6 +2804,7 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@78234873823.webnama.com.tr:3789?security=none&type=tcp&headerType=http&path=%2F&host=varzesh3.com#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2078234873823.webnama.com.tr%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "a56f6344-6efe-464f-926f-77aad983e356",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 230920393.f-sub.com | DE",
@@ -2321,6 +2846,9 @@
   },
   {
     "id": "581e1f57-d2ec-4d21-a636-42e98120f3e3",
+=======
+    "id": "fcb12c69-6f1b-4678-a24a-0f2c9a2319df",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 233923233.webnama.com.tr | DE",
     "server": "233923233.webnama.com.tr",
@@ -2328,6 +2856,7 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@233923233.webnama.com.tr:4928?security=none&type=tcp&headerType=http&path=%2F&host=speedtest.net#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20233923233.webnama.com.tr%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "7d127533-11c1-44b2-8daa-3ab545aa334e",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.162.239 | DE",
@@ -2337,6 +2866,9 @@
   },
   {
     "id": "2cd3bf10-fac5-48b9-bebf-64b7ee53a644",
+=======
+    "id": "d84cfcdc-d4ae-4105-8199-07d43819164b",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 srv6.amazon-osishop.ir | DE",
     "server": "srv6.amazon-osishop.ir",
@@ -2344,6 +2876,7 @@
     "raw": "vless://aa188240-cf10-4df6-9543-5223800891be@srv6.amazon-osishop.ir:8880?security=none&encryption=none&host=eN.TwiTtER.cOM.%3A8880&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20srv6.amazon-osishop.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "fc4ace5b-d82c-4c23-a38a-787c24a61675",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.159.125 | DE",
@@ -2385,6 +2918,9 @@
   },
   {
     "id": "66fa74c4-7ae3-46f9-8cc9-158444b8b840",
+=======
+    "id": "584705e4-6520-407e-876e-102cbc2b42d0",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 84.201.20.221 | DE",
     "server": "84.201.20.221",
@@ -2392,6 +2928,7 @@
     "raw": "vless://fa1ab865-cd2d-4c59-bfbf-a9958df88e1f@84.201.20.221:80?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2084.201.20.221%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "3131cec3-4715-4ea2-849c-d6d9ef79550f",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.159.125 | DE",
@@ -2417,6 +2954,9 @@
   },
   {
     "id": "b212f42a-3dca-4de1-870f-d3bf68086191",
+=======
+    "id": "e88a603c-5b52-43aa-a265-f87add5d5272",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 94.141.123.233 | DE",
     "server": "94.141.123.233",
@@ -2424,6 +2964,7 @@
     "raw": "vless://ba26f084-9124-4524-add4-53fcfb928161@94.141.123.233:443?allowInsecure=0&sni=cdnjs.com&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2094.141.123.233%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "8e3ec3f9-05a5-4ee8-a9a7-e19d89230e72",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 5.10.214.254 | DE",
@@ -2449,6 +2990,9 @@
   },
   {
     "id": "344f7739-9b13-40a5-81ea-89bb609b4786",
+=======
+    "id": "af660bb2-b119-4b31-af04-78420aa3d30b",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.125.246 | DE",
     "server": "91.99.125.246",
@@ -2456,7 +3000,11 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@91.99.125.246:1429?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.125.246%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "71ee5d20-0556-4eb4-bcd7-302256fef596",
+=======
+    "id": "6555bd43-2c03-4957-97e5-6241d5a70548",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.148.251 | DE",
     "server": "91.99.148.251",
@@ -2464,6 +3012,7 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@91.99.148.251:1429?security=none&type=tcp&host=speedtest.net&headerType=http#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.148.251%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "49455dd2-2420-4be8-a62b-5f3076b63bfa",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.74 | DE",
@@ -2513,6 +3062,9 @@
   },
   {
     "id": "91c5d677-6def-4239-ac18-022b01ab01bb",
+=======
+    "id": "3ba66827-eb6f-441d-96e5-dd9676ea19ec",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 germany.france-learns.ir | DE",
     "server": "germany.france-learns.ir",
@@ -2520,6 +3072,7 @@
     "raw": "vless://6ce93d15-9488-4208-914b-6ee32af0df0e@germany.france-learns.ir:8880?security=none&type=tcp&headerType=http&path=%2F&host=JouRNaloFbIgdATA.SpRinGeropEn.COm.#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20germany.france-learns.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "0ce37f49-9586-449e-8587-14dea0a56afd",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 s3.france-learns.ir | DE",
@@ -2545,6 +3098,9 @@
   },
   {
     "id": "d268e1f2-a3af-4ab7-884e-c3b1e5d4fc2e",
+=======
+    "id": "0150b28f-0742-4315-98f1-0e47d10a2a4f",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 all49-vip.f-sub.com | DE",
     "server": "all49-vip.f-sub.com",
@@ -2552,6 +3108,7 @@
     "raw": "vless://e8ecde4b-ef6e-468e-90fd-1d26371a17f3@all49-vip.f-sub.com:1517?type=tcp&headerType=http&host=testspeed-foreign.tci.ir&path=/#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20all49-vip.f-sub.com%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "c88eb34b-36ae-445e-8758-b9bc09b67527",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.80.183 | DE",
@@ -2609,6 +3166,9 @@
   },
   {
     "id": "2e6c268e-2639-4002-82ba-5ec528d5fa68",
+=======
+    "id": "abec070a-5ea4-4e30-b2ab-febdcffd7cb4",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 49.12.225.140 | DE",
     "server": "49.12.225.140",
@@ -2616,7 +3176,11 @@
     "raw": "vless://acc8587d-18a6-413e-ba3a-2b13e594d378@49.12.225.140:443?security=tls&flow=xtls-rprx-vision-udp443&sni=tgju.org&fp=chrome#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2049.12.225.140%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "ec37656c-7d6c-4f6d-a6c3-d8f5663096cf",
+=======
+    "id": "660d4388-18dc-41bf-b13d-d8f25f552585",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.183.196 | DE",
     "server": "91.99.183.196",
@@ -2624,6 +3188,7 @@
     "raw": "vless://9da21010-6025-430a-9ce9-6096673d86d1@91.99.183.196:1360?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.183.196%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "19df6947-ccb4-49b7-a2ea-0763eb2bfd1d",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.183.196 | DE",
@@ -2633,6 +3198,9 @@
   },
   {
     "id": "bdc3acbf-6d5a-443c-b47c-f564c22ee499",
+=======
+    "id": "b9f5c82a-9bb3-43e5-89cf-a49458a2064c",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.205.88 | DE",
     "server": "91.99.205.88",
@@ -2640,7 +3208,11 @@
     "raw": "vless://a9cd5362-1c4f-4034-ad78-11a67d3a98db@91.99.205.88:2939?encryption=none&security=none&type=tcp&headerType=http&host=varzesh3.com#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.205.88%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "455c1faf-1140-46ae-a6c0-2ca6c663071c",
+=======
+    "id": "f874f2d3-1c4d-4b84-81a4-728821863c5e",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.150.156 | DE",
     "server": "91.99.150.156",
@@ -2648,7 +3220,11 @@
     "raw": "vless://a9cd5362-1c4f-4034-ad78-11a67d3a98db@91.99.150.156:2939?encryption=none&security=none&type=tcp&headerType=http&host=varzesh3.com#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.150.156%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "0c062ba8-fdcc-44cd-9c05-74f067a01ea5",
+=======
+    "id": "ba9fb242-6318-496d-a487-8644c066f18f",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.148.251 | DE",
     "server": "91.99.148.251",
@@ -2656,6 +3232,7 @@
     "raw": "vless://a9cd5362-1c4f-4034-ad78-11a67d3a98db@91.99.148.251:2939?encryption=none&security=none&type=tcp&headerType=http&host=varzesh3.com#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.148.251%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "ee503da3-bedc-4c55-b2e5-90f1ceba21cc",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.206.230 | DE",
@@ -2713,6 +3290,9 @@
   },
   {
     "id": "f2d539ee-6517-44f4-ba97-e3e853f2f993",
+=======
+    "id": "b7788fc9-4001-47d6-9d24-fd52c85d93c8",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 892389823.webnama.com.tr | DE",
     "server": "892389823.webnama.com.tr",
@@ -2720,7 +3300,11 @@
     "raw": "vless://75da10d8-c6dc-4a1f-b2e7-cb9e9c9d966a@892389823.webnama.com.tr:1517?security=none&encryption=none&host=testspeed-foreign.tci.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20892389823.webnama.com.tr%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "1548a1ea-2193-4c2c-b45f-dc3baf06e786",
+=======
+    "id": "ccf0084e-5c59-401e-a419-a35b5e45bc31",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 homee.oops.wtf | DE",
     "server": "homee.oops.wtf",
@@ -2728,6 +3312,7 @@
     "raw": "vless://acfd7e81-54ba-46ba-a3fb-0095470453ce@homee.oops.wtf:8866?security=&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20homee.oops.wtf%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "91e391b2-5979-4ed1-9ee1-8c57e44fdd42",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.183.196 | DE",
@@ -2793,6 +3378,9 @@
   },
   {
     "id": "c423c5fe-a11e-4bbc-aac3-5d3fca3d09e6",
+=======
+    "id": "d223f054-5e32-497c-b9b8-7807ccc8a041",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 95.164.89.93 | DE",
     "server": "95.164.89.93",
@@ -2800,6 +3388,7 @@
     "raw": "vless://7af09bbd-0931-4315-86ca-dcff34b3e998@95.164.89.93:2082?security=&encryption=none&headerType=none&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2095.164.89.93%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "1dec3a52-85f2-4478-a259-8a3888919076",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.183.196 | DE",
@@ -2809,6 +3398,9 @@
   },
   {
     "id": "78e85d61-6169-41b7-9a2e-352ee09883f2",
+=======
+    "id": "39455fe1-139a-4880-a076-1065f725db3a",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 185.125.103.101 | DE",
     "server": "185.125.103.101",
@@ -2816,7 +3408,11 @@
     "raw": "vless://c94d74f3-2bf3-40eb-8dfd-c9159e520bf9@185.125.103.101:4791?security=none&encryption=none&host=www.speedtest.net&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20185.125.103.101%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "9aa2a1aa-53fb-4410-8355-b8a51a0da910",
+=======
+    "id": "a1fb45bb-8dfb-4fe9-bd09-9fe3c573ad5d",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 300232332.webnama.com.tr | DE",
     "server": "300232332.webnama.com.tr",
@@ -2824,6 +3420,7 @@
     "raw": "vless://e65f0a57-96f4-4c60-b550-d5bd0c20c557@300232332.webnama.com.tr:1517?security=none&type=tcp&headerType=http&path=%2F&host=testspeed-foreign.tci.ir#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20300232332.webnama.com.tr%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "8698573b-855a-4f12-a8a0-6165bc15edcb",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 892389823.webnama.com.tr | DE",
@@ -2833,6 +3430,9 @@
   },
   {
     "id": "a18de893-10d1-425f-ac14-05b1a4353ed1",
+=======
+    "id": "5c03cc55-b705-4b0f-9085-d25fc4379be5",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 185.125.103.101 | DE",
     "server": "185.125.103.101",
@@ -2840,7 +3440,11 @@
     "raw": "vless://c94d74f3-2bf3-40eb-8dfd-c9159e520bf9@185.125.103.101:4790?security=none&encryption=none&host=www.speedtest.net&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20185.125.103.101%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "e74d7b43-6b1e-49bd-b051-9da1dec32e88",
+=======
+    "id": "728a9613-f4b7-4c01-b301-d563976463c4",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.201.171 | DE",
     "server": "91.99.201.171",
@@ -2848,7 +3452,11 @@
     "raw": "vless://9da21010-6025-430a-9ce9-6096673d86d1@91.99.201.171:1360?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2091.99.201.171%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "1d32f13c-2932-4fc5-b396-8881e1bf3c67",
+=======
+    "id": "ae952f95-b7b7-4334-aa84-ff9ae6d79cc7",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 GRBOT.hamrahconf.ir | DE",
     "server": "GRBOT.hamrahconf.ir",
@@ -2856,7 +3464,11 @@
     "raw": "vless://fbdf5191-7fe6-4161-8a4b-bf5154f6ea8e@GRBOT.hamrahconf.ir:8787?security=none&encryption=none&host=tgju.org&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20GRBOT.hamrahconf.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "236bcd71-219d-4770-921f-3379ed80477a",
+=======
+    "id": "89e21151-cd77-421e-b035-99c5cc4af8ca",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 tam212oka5.ivy-net.ir | DE",
     "server": "tam212oka5.ivy-net.ir",
@@ -2864,7 +3476,11 @@
     "raw": "vless://a85136b1-1a76-481d-aef8-4bdc1f3d4773@tam212oka5.ivy-net.ir:3070?security=none&encryption=none&host=parsabr.com&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20tam212oka5.ivy-net.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "3629cc23-4d07-4aca-8b1e-1562fb3d26de",
+=======
+    "id": "b10c8a9f-6886-473a-93bd-2945d6a25738",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 hk.3dlkimi.ir | DE",
     "server": "hk.3dlkimi.ir",
@@ -2872,7 +3488,11 @@
     "raw": "vless://9a289736-d46b-47e1-9bf9-ef11f05b46c9@hk.3dlkimi.ir:46320?type=tcp&path=%2F&host=zula.ir&headerType=http&security=none#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20hk.3dlkimi.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "34af2f0b-7ed6-4d2e-971e-72f9dafb5ed9",
+=======
+    "id": "a56722b7-01ee-4f4c-8d1d-69b26f8b9bfb",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 marzban56.boshrachoice.ir | DE",
     "server": "marzban56.boshrachoice.ir",
@@ -2880,6 +3500,7 @@
     "raw": "vless://a5b02134-d838-4c8f-ad42-cc6905264e4b@marzban56.boshrachoice.ir:8443?type=tcp&headerType=http&host=www.speedtest.net&security=none#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20marzban56.boshrachoice.ir%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "d7c105c5-1b21-491f-878b-31ef6b397108",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 tam212oka5.ivy-net.ir | DE",
@@ -2897,6 +3518,9 @@
   },
   {
     "id": "be801b14-1635-41f0-aa78-d21ccba0493e",
+=======
+    "id": "f5a0b902-1abf-4bf2-8490-3a5b48863ea0",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 mm.sjdpictures.shop | DE",
     "server": "mm.sjdpictures.shop",
@@ -2904,7 +3528,11 @@
     "raw": "vless://833ab4cf-ee96-4923-9bf4-1308a3566065@mm.sjdpictures.shop:2087/?type=tcp&path=%2F&host=cafebazaar.ir&headerType=http&security=none#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20mm.sjdpictures.shop%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "63b66718-f217-4fb4-bae8-47d645ffa4b6",
+=======
+    "id": "4479e21a-126c-4cfd-a219-86db1e6b6376",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 5.75.195.179 | DE",
     "server": "5.75.195.179",
@@ -2912,7 +3540,11 @@
     "raw": "vless://2ee4123f-2420-4a76-dcbd-f4b9323954b2@5.75.195.179:445?type=ws&security=none&path=%2F#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%205.75.195.179%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "04067bd3-d1bd-4335-8dd9-43808c846831",
+=======
+    "id": "bda6eab1-0b5a-4d7e-a1c9-99c92d253944",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 X3.snaapppfree.com | DE",
     "server": "X3.snaapppfree.com",
@@ -2920,6 +3552,7 @@
     "raw": "vless://9da21010-6025-430a-9ce9-6096673d86d1@X3.snaapppfree.com:1360?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%20X3.snaapppfree.com%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "23d7426a-ea62-4e5b-af6e-7bcf4ab7cc84",
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 91.99.183.196 | DE",
@@ -2929,6 +3562,9 @@
   },
   {
     "id": "5a7a916e-d072-44ef-8551-c9c8c783433b",
+=======
+    "id": "618f366f-0976-4dd3-9639-109ed31e4ebe",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 49.13.155.164 | DE",
     "server": "49.13.155.164",
@@ -2936,7 +3572,11 @@
     "raw": "vless://525d30fb-d884-4779-8e73-e2b5006cb846@49.13.155.164:39898?security=none&encryption=none&host=nobitex.ir&headerType=http&type=tcp#%E2%9C%A8%20@NamiraNet%20%7C%20%F0%9F%9A%80%20%7C%20%F0%9F%8C%90%2049.13.155.164%20%7C%20DE"
   },
   {
+<<<<<<< HEAD
     "id": "ac426a10-e15a-4ffe-b2cd-83ac644615db",
+=======
+    "id": "0d7dc62a-f1f0-4438-aa36-398355e076e8",
+>>>>>>> adf9b61ad6d39a861502923f8a29bf324d020262
     "type": "vless",
     "tag": "✨ @NamiraNet | 🚀 | 🌐 ir15.sogol98.com | DE",
     "server": "ir15.sogol98.com",
