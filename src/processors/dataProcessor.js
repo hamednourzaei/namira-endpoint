@@ -19,34 +19,25 @@ function processData(data) {
 
   const parsed = lines.map(parseURL).filter(Boolean);
 
-  // حذف تکراری
-  const unique = [];
-  const seen = new Set();
-
-  for (const p of parsed) {
-    const key = `${p.server}:${p.port}`;
-    if (!seen.has(key)) {
-      seen.add(key);
-      unique.push(p);
-    }
-  }
+  // بدون فیلتر تکراری — به لینک‌ها اعتماد می‌کنیم
+  const finalList = parsed;
 
   // ذخیره فایل‌ها
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
 
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "configs.txt"),
-    unique.map((p) => p.raw).join("\n"),
+    finalList.map((p) => p.raw).join("\n"),
     "utf-8"
   );
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "configs.json"),
-    JSON.stringify(unique, null, 2),
+    JSON.stringify(finalList, null, 2),
     "utf-8"
   );
 
   const csvHeader = "id,type,tag,server,port,raw\n";
-  const csvRows = unique
+  const csvRows = finalList
     .map((p) =>
       [
         `"${p.id}"`,
@@ -65,7 +56,7 @@ function processData(data) {
     "utf-8"
   );
 
-  console.log(`✅ ${unique.length} unique configs saved to outputs/`);
+  console.log(`✅ ${finalList.length} configs saved to outputs/`);
 }
 
 module.exports = { processData };
