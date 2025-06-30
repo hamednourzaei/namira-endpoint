@@ -30,11 +30,11 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add .
           git commit -m "Update configs"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/hamednourzaei/namira-endpoint.git
+          git push https://${{ secrets.NAMIRA }}@github.com/hamednourzaei/namira-endpoint.git
 
       - name: Merge changes into main branch
         run: |
           git fetch origin
           git checkout main
           git merge --no-ff feature-branch  # فرض می‌کنیم تغییرات در feature branch است
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/hamednourzaei/namira-endpoint.git
+          git push https://${{ secrets.NAMIRA }}@github.com/hamednourzaei/namira-endpoint.git
