@@ -11,10 +11,12 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.NAMIRA }} # استفاده از توکن برای دسترسی به مخزن
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "18"
 
@@ -32,9 +34,13 @@ jobs:
           git commit -m "Update configs"
           git push https://${{ secrets.NAMIRA }}@github.com/hamednourzaei/namira-endpoint.git
 
-      - name: Merge changes into main branch
-        run: |
-          git fetch origin
-          git checkout main
-          git merge --no-ff feature-branch  # فرض می‌کنیم تغییرات در feature branch است
-          git push https://${{ secrets.NAMIRA }}@github.com/hamednourzaei/namira-endpoint.git
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.NAMIRA }}
+          commit-message: "🔁 Update configs automatically"
+          title: "Auto-update configs"
+          body: "Automatic update by GitHub Actions"
+          branch: auto-update-configs
+          base: main
+          auto-merge: true
