@@ -3,6 +3,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-v18+-green)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Enabled-blue)
 ![License](https://img.shields.io/badge/License-Custom_Copyright-red)
+https://hamednourzaei.github.io/namira-endpoint/outputs/configs.txt
 
 یه ربات قدرتمند و ماژولار برای دریافت، پردازش و ذخیره لینک‌های ساب‌اسکریپشن (مانند SS، VMess، VLESS و Trojan) از یه منبع آنلاین. این پروژه لینک‌ها رو فیلتر می‌کنه، تکراری‌ها رو حذف می‌کنه و خروجی رو به‌صورت فایل‌های `txt`، `json` و `csv` ذخیره می‌کنه. به لطف **GitHub Actions**، فایل‌های خروجی هر ۵ دقیقه به‌روزرسانی می‌شن (در صورت تغییر در ساب‌اسکریپشن).
 
@@ -13,6 +14,7 @@
 ## ویژگی‌های کلیدی
 
 - **پردازش لینک‌های ساب‌اسکریپشن**: پشتیبانی از پروتکل‌های SS، VMess، VLESS و Trojan.
+  ![subscription](https://hamednourzaei.github.io/namira-endpoint/outputs/configs.txt)
 - **فیلتر کردن بر اساس کشور**: فقط لینک‌هایی که شامل تگ‌های مشخص‌شده (مثل 🇩🇪، DE، Germany) باشن، پردازش می‌شن.
 - **حذف لینک‌های تکراری**: بر اساس `server:port`، لینک‌های تکراری حذف می‌شن.
 - **ذخیره خروجی در چند فرمت**:
@@ -72,6 +74,7 @@ project-root/
 پروژه سه فایل خروجی اصلی در پوشه `output/` تولید می‌کنه:
 
 ### ۱. `configs.txt`
+
 - **فرمت**: متن خام (Plain Text)
 - **محتوا**: لیست لینک‌های ساب‌اسکریپشن فیلترشده و بدون تکرار، هر لینک در یک خط.
 - **ویژگی‌ها**:
@@ -88,6 +91,7 @@ project-root/
     ```
 
 ### ۲. `configs.json`
+
 - **فرمت**: JSON
 - **محتوا**: آرایه‌ای از اشیاء که هر کدوم شامل اطلاعات ساختاریافته یه لینک ساب‌اسکریپشنه:
   - `id`: شناسه یکتا (UUID)
@@ -118,6 +122,7 @@ project-root/
     ```
 
 ### ۳. `configs.csv`
+
 - **فرمت**: CSV (Comma-Separated Values)
 - **محتوا**: جدولی با ستون‌های `id`، `type`، `tag`، `server`، `port` و `raw`.
 - **ویژگی‌ها**:
@@ -131,6 +136,8 @@ project-root/
     ```
     id,type,tag,server,port,raw
     "550e8400-e29 Chhamednourzaei / Config Parser Bot
+    ```
+
 ---
 
 ## حقوق کپی‌رایت
