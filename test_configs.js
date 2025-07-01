@@ -8,7 +8,7 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const INPUT_FILE = "outputs/configs.txt";
 const OUTPUT_FILE = "outputs/good.txt";
-const MAX_CONFIGS = 100;
+const MAX_CONFIGS = 750;
 const TIMEOUT = 3000;
 const RETRIES = 3;
 const MAX_CONCURRENT = 20;
