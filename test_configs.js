@@ -2,12 +2,15 @@ const fs = require("fs").promises;
 const net = require("net");
 const tls = require("tls");
 const WebSocket = require("ws");
-const ping = require("ping");
+const dns = require("dns").promises;
+
+// تنظیم DNS سرورهای عمومی برای رفع مشکلات DNS
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const INPUT_FILE = "outputs/configs.txt";
 const OUTPUT_FILE = "outputs/good.txt";
 const MAX_CONFIGS = 10;
-const TIMEOUT = 5000; // میلی‌ثانیه
+const TIMEOUT = 10000; // افزایش تایم‌اوت به 10 ثانیه
 const RETRIES = 5;
 const VALID_SS_METHODS = [
   "aes-128-gcm",
@@ -167,7 +170,6 @@ function parseConfig(line) {
 }
 
 async function resolveDNS(host) {
-  const dns = require("dns").promises;
   try {
     const addresses = await dns.lookup(host);
     const ip = addresses.address;
@@ -185,6 +187,26 @@ async function resolveDNS(host) {
     console.log(`❌ DNS Failed for ${host}: ${e.message}`);
     return null;
   }
+}
+
+async function testConnection(host, port) {
+  return new Promise((resolve) => {
+    const socket = net.createConnection({ host, port, timeout: TIMEOUT });
+    socket.on("connect", () => {
+      console.log(`✅ TCP Connection OK`);
+      socket.end();
+      resolve(true);
+    });
+    socket.on("error", (e) => {
+      console.log(`❌ TCP Connection Failed: ${e.message}`);
+      resolve(false);
+    });
+    socket.on("timeout", () => {
+      console.log("❌ TCP Connection Timeout");
+      socket.end();
+      resolve(false);
+    });
+  });
 }
 
 async function testWebSocket(config) {
@@ -230,15 +252,9 @@ async function testTCPTLS(config) {
   const ip = await resolveDNS(host);
   if (!ip) return false;
 
-  const pingResult = await ping.promise.probe(host, {
-    timeout: TIMEOUT / 1000,
-  });
-  if (pingResult.alive) {
-    console.log(`✅ Ping OK (${Math.round(pingResult.avg)}ms)`);
-  } else {
-    console.log("❌ Ping Failed");
-    return false;
-  }
+  // جایگزینی پینگ با تست اتصال TCP
+  const connSuccess = await testConnection(ip, port);
+  if (!connSuccess) return false;
 
   let success = false;
   for (let attempt = 1; attempt <= RETRIES; attempt++) {
@@ -311,6 +327,8 @@ async function main() {
         }
       }
       console.log("—".repeat(48));
+      // افزودن تأخیر بین تست‌ها برای کاهش فشار روی شبکه
+      await new Promise((resolve) => setTimeout(resolve, 2000));
     }
 
     await fs.mkdir("outputs", { recursive: true });
