@@ -2,7 +2,8 @@ name: Update Configs Every 5 Minutes
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # هر 5 دقیقه اجرا می‌شود
+    - cron: "5 * * * *" # اجرای ساعتی در دقیقه ۵
+
   workflow_dispatch: # امکان اجرای دستی
 
 jobs:
