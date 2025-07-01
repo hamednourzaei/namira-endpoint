@@ -12,7 +12,7 @@ const OUTPUT_FILE = "outputs/good.txt";
 const MAX_CONFIGS = 800;
 const TIMEOUT = 900; // افزایش به 15 ثانیه
 const RETRIES = 3;
-const MAX_CONCURRENT = 50; // کاهش تعداد تردهای همزمان
+const MAX_CONCURRENT = 20; // کاهش تعداد تردهای همزمان
 const VALID_SS_METHODS = [
   "aes-128-gcm",
   "aes-256-gcm",
