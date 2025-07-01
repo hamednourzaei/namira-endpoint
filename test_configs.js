@@ -9,10 +9,10 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const INPUT_FILE = "outputs/configs.txt";
 const OUTPUT_FILE = "outputs/good.txt";
-const MAX_CONFIGS = 800;
+const MAX_CONFIGS = 100;
 const TIMEOUT = 900; // افزایش به 15 ثانیه
 const RETRIES = 3;
-const MAX_CONCURRENT = 50; // کاهش تعداد تردهای همزمان
+const MAX_CONCURRENT = 200; // کاهش تعداد تردهای همزمان
 const VALID_SS_METHODS = [
   "aes-128-gcm",
   "aes-256-gcm",
