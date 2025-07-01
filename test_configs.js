@@ -4,14 +4,15 @@ const tls = require("tls");
 const WebSocket = require("ws");
 const dns = require("dns").promises;
 
-// تنظیم DNS سرورهای عمومی برای رفع مشکلات DNS
+// تنظیم DNS سرورهای عمومی
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const INPUT_FILE = "outputs/configs.txt";
 const OUTPUT_FILE = "outputs/good.txt";
 const MAX_CONFIGS = 10;
-const TIMEOUT = 10000; // افزایش تایم‌اوت به 10 ثانیه
+const TIMEOUT = 10000; // 10 ثانیه
 const RETRIES = 5;
+const MAX_CONCURRENT = 5; // تعداد تست‌های همزمان
 const VALID_SS_METHODS = [
   "aes-128-gcm",
   "aes-256-gcm",
@@ -252,7 +253,6 @@ async function testTCPTLS(config) {
   const ip = await resolveDNS(host);
   if (!ip) return false;
 
-  // جایگزینی پینگ با تست اتصال TCP
   const connSuccess = await testConnection(ip, port);
   if (!connSuccess) return false;
 
@@ -304,6 +304,36 @@ async function testTCPTLS(config) {
   return success;
 }
 
+async function testConfig(line) {
+  console.log(`\n🔍 Testing: ${line.slice(0, 60)}...`);
+  const config = parseConfig(line);
+  let result = null;
+  if (config) {
+    if (config.type === "ws") {
+      if ((await testWebSocket(config)) && (await testTCPTLS(config))) {
+        result = config.full;
+      }
+    } else if (await testTCPTLS(config)) {
+      result = config.full;
+    }
+  }
+  console.log("—".repeat(48));
+  return result;
+}
+
+// تابع برای تقسیم آرایه به دسته‌های کوچک‌تر
+async function processInBatches(array, batchSize, processFn) {
+  const results = [];
+  for (let i = 0; i < array.length; i += batchSize) {
+    const batch = array.slice(i, i + batchSize);
+    const batchResults = await Promise.all(batch.map(processFn));
+    results.push(...batchResults.filter((result) => result !== null));
+    // تأخیر کوتاه بین دسته‌ها برای کاهش فشار روی شبکه
+    await new Promise((resolve) => setTimeout(resolve, 500));
+  }
+  return results;
+}
+
 async function main() {
   try {
     const data = await fs.readFile(INPUT_FILE, "utf-8");
@@ -312,24 +342,8 @@ async function main() {
       .filter((line) => line.trim())
       .slice(-MAX_CONFIGS);
     console.log("🔁 Reading configs...");
-    const good = [];
 
-    for (const line of lines) {
-      console.log(`\n🔍 Testing: ${line.slice(0, 60)}...`);
-      const config = parseConfig(line);
-      if (config) {
-        if (config.type === "ws") {
-          if ((await testWebSocket(config)) && (await testTCPTLS(config))) {
-            good.push(config.full);
-          }
-        } else if (await testTCPTLS(config)) {
-          good.push(config.full);
-        }
-      }
-      console.log("—".repeat(48));
-      // افزودن تأخیر بین تست‌ها برای کاهش فشار روی شبکه
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-    }
+    const good = await processInBatches(lines, MAX_CONCURRENT, testConfig);
 
     await fs.mkdir("outputs", { recursive: true });
     await fs.writeFile(OUTPUT_FILE, good.join("\n"), "utf-8");
