@@ -4,15 +4,14 @@ const tls = require("tls");
 const WebSocket = require("ws");
 const dns = require("dns").promises;
 
-// تنظیم DNS سرورهای عمومی
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const INPUT_FILE = "outputs/configs.txt";
 const OUTPUT_FILE = "outputs/good.txt";
 const MAX_CONFIGS = 20;
-const TIMEOUT = 900; // افزایش به 15 ثانیه
+const TIMEOUT = 3000;
 const RETRIES = 3;
-const MAX_CONCURRENT = 20; // کاهش تعداد تردهای همزمان
+const MAX_CONCURRENT = 20;
 const VALID_SS_METHODS = [
   "aes-128-gcm",
   "aes-256-gcm",
@@ -23,8 +22,7 @@ const VALID_SS_METHODS = [
 ];
 
 function validateUUID(uuid) {
-  const uuidPattern =
-    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   return uuidPattern.test(uuid.toLowerCase());
 }
 
@@ -66,6 +64,7 @@ function parseVlessURL(urlStr) {
       port: parseInt(port),
       hostHeader,
       tls: ["tls", "reality", "xtls"].includes(security),
+      xtls: security === "xtls",
       type: query.type || "tcp",
       path: wsPath,
       full: urlStr,
@@ -92,6 +91,7 @@ function parseVmessURL(urlStr) {
       port: parseInt(config.port),
       hostHeader: config.host || config.add,
       tls: config.tls === "tls",
+      xtls: false,
       type: config.net || "tcp",
       path: config.path || "/",
       full: urlStr,
@@ -122,6 +122,7 @@ function parseTrojanURL(urlStr) {
       port: parseInt(port),
       hostHeader,
       tls: true,
+      xtls: false,
       type: query.type || "tcp",
       path: wsPath,
       full: urlStr,
@@ -153,6 +154,7 @@ function parseSSURL(urlStr) {
       host,
       port: parseInt(port),
       tls: false,
+      xtls: false,
       type: "tcp",
       full: urlStr,
     };
@@ -175,20 +177,14 @@ async function resolveDNS(host) {
     try {
       const addresses = await dns.lookup(host);
       const ip = addresses.address;
-      if (
-        ip.startsWith("10.") ||
-        ip.startsWith("172.16.") ||
-        ip.startsWith("192.168.")
-      ) {
+      if (ip.startsWith("10.") || ip.startsWith("172.16.") || ip.startsWith("192.168.")) {
         console.log(`❌ Private IP detected: ${ip}`);
         return null;
       }
       console.log(`🌐 DNS Resolved: ${host} → ${ip}`);
       return ip;
     } catch (e) {
-      console.log(
-        `❌ DNS Failed for ${host} (Attempt ${attempt}): ${e.message}`
-      );
+      console.log(`❌ DNS Failed for ${host} (Attempt ${attempt}): ${e.message}`);
       if (attempt === 3) return null;
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
@@ -206,9 +202,7 @@ async function testConnection(host, port) {
           resolve(true);
         });
         socket.on("error", (e) => {
-          console.log(
-            `❌ TCP Connection Failed (Attempt ${attempt}): ${e.message}`
-          );
+          console.log(`❌ TCP Connection Failed (Attempt ${attempt}): ${e.message}`);
           reject(e);
         });
         socket.on("timeout", () => {
@@ -227,25 +221,22 @@ async function testConnection(host, port) {
 
 async function testWebSocket(config) {
   if (config.type === "ws") {
-    const wsPath = config.path || "/";
-    const host = config.host;
-    const port = config.port;
-    const wsURL = `ws://${host}:${port}${wsPath}`;
+    const protocol = config.tls ? "wss" : "ws";
+    const wsURL = `${protocol}://${config.host}:${config.port}${config.path}`;
     try {
-      const ws = new WebSocket(wsURL, { timeout: TIMEOUT });
+      const ws = new WebSocket(wsURL, {
+        headers: { Host: config.hostHeader || config.host },
+      });
       await new Promise((resolve, reject) => {
         ws.on("open", () => {
-          console.log("✅ WebSocket Direct OK");
+          console.log(`✅ WebSocket (${protocol.toUpperCase()}) OK`);
           ws.close();
           resolve(true);
         });
         ws.on("error", (e) => {
-          console.log(`❌ WebSocket Direct Failed: ${e.message}`);
-          if (e.code === "ETIMEDOUT") {
-            reject(new Error("WebSocket Timeout"));
-          } else {
-            reject(false);
-          }
+          console.log(`❌ WebSocket ${protocol.toUpperCase()} Failed: ${e.message}`);
+          if (e.code === "ETIMEDOUT") reject(new Error("WebSocket Timeout"));
+          else reject(false);
         });
       });
       return true;
@@ -261,37 +252,27 @@ async function testWebSocket(config) {
 }
 
 async function testTCPTLS(config) {
-  const host = config.host;
-  const port = config.port;
-  const hostHeader = config.hostHeader || host;
-
-  const ip = await resolveDNS(host);
+  const ip = await resolveDNS(config.host);
   if (!ip) return false;
 
-  const connSuccess = await testConnection(ip, port);
+  const connSuccess = await testConnection(ip, config.port);
   if (!connSuccess) return false;
 
-  let success = false;
   for (let attempt = 1; attempt <= RETRIES; attempt++) {
     try {
       console.log(`🔁 Attempt ${attempt}...`);
-      const start = Date.now();
       const sock = await new Promise((resolve, reject) => {
-        const socket = net.createConnection(
-          { host: ip, port, timeout: TIMEOUT },
-          () => resolve(socket)
-        );
+        const socket = net.createConnection({ host: ip, port: config.port, timeout: TIMEOUT }, () => resolve(socket));
         socket.on("error", (e) => reject(e));
       });
-      const tcpTime = Date.now() - start;
-      console.log(`✅ TCP OK (${tcpTime}ms)`);
+      console.log(`✅ TCP OK`);
 
-      if (config.tls) {
+      if (config.tls || config.xtls) {
         const tlsSock = await new Promise((resolve, reject) => {
           const socket = tls.connect(
             {
               socket: sock,
-              servername: hostHeader,
+              servername: config.hostHeader || config.host,
               rejectUnauthorized: false,
               timeout: TIMEOUT,
             },
@@ -301,12 +282,12 @@ async function testTCPTLS(config) {
         });
         const cert = tlsSock.getPeerCertificate();
         const expiry = cert.valid_to || "N/A";
-        console.log(`✅ TLS OK - Expiry: ${expiry}`);
+        const type = config.xtls ? "XTLS" : "TLS";
+        console.log(`✅ ${type} OK - Expiry: ${expiry}`);
         tlsSock.end();
       }
       sock.end();
-      success = true;
-      break;
+      return true;
     } catch (e) {
       console.log(`❌ Failed attempt ${attempt}: ${e.message}`);
       if (e.code === "ETIMEDOUT") {
@@ -316,7 +297,7 @@ async function testTCPTLS(config) {
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
   }
-  return success;
+  return false;
 }
 
 async function testConfig(line) {
@@ -337,9 +318,7 @@ async function testConfig(line) {
       return config.full;
     }
   } catch (e) {
-    console.log(
-      `❌ Config failed: ${line.slice(0, 60)}... Error: ${e.message}`
-    );
+    console.log(`❌ Config failed: ${line.slice(0, 60)}... Error: ${e.message}`);
   }
   return null;
 }
@@ -358,19 +337,14 @@ async function processInBatches(array, batchSize, processFn) {
 async function main() {
   try {
     const data = await fs.readFile(INPUT_FILE, "utf-8");
-    const lines = data
-      .split("\n")
-      .filter((line) => line.trim())
-      .slice(-MAX_CONFIGS);
+    const lines = data.split("\n").filter((line) => line.trim()).slice(-MAX_CONFIGS);
     console.log("🔁 Reading configs...");
 
     const good = await processInBatches(lines, MAX_CONCURRENT, testConfig);
 
     await fs.mkdir("outputs", { recursive: true });
     await fs.writeFile(OUTPUT_FILE, good.join("\n"), "utf-8");
-    console.log(
-      `\n✅ Done. ${good.length} configs passed and saved in ${OUTPUT_FILE}`
-    );
+    console.log(`\n✅ Done. ${good.length} configs passed and saved in ${OUTPUT_FILE}`);
   } catch (e) {
     console.log(`❌ Error: ${e.message}`);
   }
