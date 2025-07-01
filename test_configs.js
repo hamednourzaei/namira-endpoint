@@ -10,9 +10,9 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 const INPUT_FILE = "outputs/configs.txt";
 const OUTPUT_FILE = "outputs/good.txt";
 const MAX_CONFIGS = 800;
-const TIMEOUT = 10000; // 10 ثانیه
-const RETRIES = 50;
-const MAX_CONCURRENT = 5; // تعداد تست‌های همزمان
+const TIMEOUT = 900; // افزایش به 15 ثانیه
+const RETRIES = 3;
+const MAX_CONCURRENT = 50; // کاهش تعداد تردهای همزمان
 const VALID_SS_METHODS = [
   "aes-128-gcm",
   "aes-256-gcm",
@@ -24,7 +24,7 @@ const VALID_SS_METHODS = [
 
 function validateUUID(uuid) {
   const uuidPattern =
-    /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   return uuidPattern.test(uuid.toLowerCase());
 }
 
@@ -171,43 +171,58 @@ function parseConfig(line) {
 }
 
 async function resolveDNS(host) {
-  try {
-    const addresses = await dns.lookup(host);
-    const ip = addresses.address;
-    if (
-      ip.startsWith("10.") ||
-      ip.startsWith("172.16.") ||
-      ip.startsWith("192.168.")
-    ) {
-      console.log(`❌ Private IP detected: ${ip}`);
-      return null;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const addresses = await dns.lookup(host);
+      const ip = addresses.address;
+      if (
+        ip.startsWith("10.") ||
+        ip.startsWith("172.16.") ||
+        ip.startsWith("192.168.")
+      ) {
+        console.log(`❌ Private IP detected: ${ip}`);
+        return null;
+      }
+      console.log(`🌐 DNS Resolved: ${host} → ${ip}`);
+      return ip;
+    } catch (e) {
+      console.log(
+        `❌ DNS Failed for ${host} (Attempt ${attempt}): ${e.message}`
+      );
+      if (attempt === 3) return null;
+      await new Promise((resolve) => setTimeout(resolve, 1000));
     }
-    console.log(`🌐 DNS Resolved: ${host} → ${ip}`);
-    return ip;
-  } catch (e) {
-    console.log(`❌ DNS Failed for ${host}: ${e.message}`);
-    return null;
   }
 }
 
 async function testConnection(host, port) {
-  return new Promise((resolve) => {
-    const socket = net.createConnection({ host, port, timeout: TIMEOUT });
-    socket.on("connect", () => {
-      console.log(`✅ TCP Connection OK`);
-      socket.end();
-      resolve(true);
-    });
-    socket.on("error", (e) => {
-      console.log(`❌ TCP Connection Failed: ${e.message}`);
-      resolve(false);
-    });
-    socket.on("timeout", () => {
-      console.log("❌ TCP Connection Timeout");
-      socket.end();
-      resolve(false);
-    });
-  });
+  for (let attempt = 1; attempt <= RETRIES; attempt++) {
+    try {
+      return await new Promise((resolve, reject) => {
+        const socket = net.createConnection({ host, port, timeout: TIMEOUT });
+        socket.on("connect", () => {
+          console.log(`✅ TCP Connection OK (Attempt ${attempt})`);
+          socket.end();
+          resolve(true);
+        });
+        socket.on("error", (e) => {
+          console.log(
+            `❌ TCP Connection Failed (Attempt ${attempt}): ${e.message}`
+          );
+          reject(e);
+        });
+        socket.on("timeout", () => {
+          console.log(`❌ TCP Connection Timeout (Attempt ${attempt})`);
+          socket.end();
+          reject(new Error("Timeout"));
+        });
+      });
+    } catch (e) {
+      if (attempt === RETRIES) return false;
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+    }
+  }
+  return false;
 }
 
 async function testWebSocket(config) {
@@ -307,28 +322,34 @@ async function testTCPTLS(config) {
 async function testConfig(line) {
   console.log(`\n🔍 Testing: ${line.slice(0, 60)}...`);
   const config = parseConfig(line);
-  let result = null;
-  if (config) {
+  if (!config) {
+    console.log(`❌ Config parsing failed for: ${line.slice(0, 60)}...`);
+    return null;
+  }
+  try {
     if (config.type === "ws") {
       if ((await testWebSocket(config)) && (await testTCPTLS(config))) {
-        result = config.full;
+        console.log(`✅ Config passed: ${line.slice(0, 60)}...`);
+        return config.full;
       }
     } else if (await testTCPTLS(config)) {
-      result = config.full;
+      console.log(`✅ Config passed: ${line.slice(0, 60)}...`);
+      return config.full;
     }
+  } catch (e) {
+    console.log(
+      `❌ Config failed: ${line.slice(0, 60)}... Error: ${e.message}`
+    );
   }
-  console.log("—".repeat(48));
-  return result;
+  return null;
 }
 
-// تابع برای تقسیم آرایه به دسته‌های کوچک‌تر
 async function processInBatches(array, batchSize, processFn) {
   const results = [];
   for (let i = 0; i < array.length; i += batchSize) {
     const batch = array.slice(i, i + batchSize);
     const batchResults = await Promise.all(batch.map(processFn));
     results.push(...batchResults.filter((result) => result !== null));
-    // تأخیر کوتاه بین دسته‌ها برای کاهش فشار روی شبکه
     await new Promise((resolve) => setTimeout(resolve, 500));
   }
   return results;
