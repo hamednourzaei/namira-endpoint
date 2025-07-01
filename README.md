@@ -14,7 +14,7 @@ https://hamednourzaei.github.io/namira-endpoint/outputs/configs.txt
 ## ویژگی‌های کلیدی
 
 - **پردازش لینک‌های ساب‌اسکریپشن**: پشتیبانی از پروتکل‌های SS، VMess، VLESS و Trojan.
-  ![subscription](https://hamednourzaei.github.io/namira-endpoint/outputs/configs.txt)
+  -linksub for import ![subscription](https://hamednourzaei.github.io/namira-endpoint/outputs/configs.txt)
 - **فیلتر کردن بر اساس کشور**: فقط لینک‌هایی که شامل تگ‌های مشخص‌شده (مثل 🇩🇪، DE، Germany) باشن، پردازش می‌شن.
 - **ذخیره خروجی در چند فرمت**:
   - `configs.txt`: لیست خام لینک‌ها.
