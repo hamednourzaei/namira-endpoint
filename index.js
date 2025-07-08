@@ -5,7 +5,7 @@ const {
 } = require("./src/fetcher/fetchSubscription");
 const { processData } = require("./src/processors/dataProcessor");
 
-const SUB_URL = "https://namira-web.vercel.app/api/subscription";
+const SUB_URL = "https://www.namira.dev/api/subscription";
 
 (async () => {
   try {
